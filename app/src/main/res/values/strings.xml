@@ -13,4 +13,5 @@
     <string name="actor_second_moc">Chris Evans</string>
     <string name="actor_third_moc">Mark Ruffalo</string>
     <string name="actor_fourth_moc">Chris Hemsworth</string>
+    <string name="movie_list_title">Movies list</string>
 </resources>
