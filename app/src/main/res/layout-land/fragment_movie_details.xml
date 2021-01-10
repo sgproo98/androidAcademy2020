@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     tools:context=".ui.activities.MovieDetailsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -33,10 +32,8 @@
             android:drawablePadding="8dp"
             android:text="@string/back_button"
             android:textAlignment="center"
-            android:textColor="@color/back_button"
+            android:textColor="@color/colorPrimary"
             app:drawableStartCompat="@drawable/ic_back"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,8 +48,6 @@
             android:text="@string/age_moc"
             android:textColor="@android:color/white"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
@@ -64,7 +59,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:text="@string/film_name_moc"
-            android:textColor="@color/main_text_color"
+            android:textColor="@color/white"
             android:textSize="40sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +74,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:text="@string/genre_moc"
-            android:textColor="@color/genre_and_rating"
+            android:textColor="@color/colorAccent"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +103,7 @@
             android:layout_marginTop="4dp"
             android:text="@string/reviews_moc"
             android:textAllCaps="true"
-            android:textColor="@color/additional_text_color"
+            android:textColor="@color/colorPrimary"
             android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/rating"
             app:layout_constraintTop_toBottomOf="@+id/genreView" />
@@ -121,7 +116,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:text="@string/storyline"
-            android:textColor="@color/main_text_color"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -135,7 +130,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/storyline_moc"
-            android:textColor="@color/additional_text_color"
+            android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -149,7 +144,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:text="@string/cast"
-            android:textColor="@color/main_text_color"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -157,16 +152,14 @@
 
         <ImageView
             android:id="@+id/actorFirst"
-            android:layout_width="0dp"
-            android:layout_height="140dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
             android:src="@drawable/actor_first"
-            app:layout_constraintDimensionRatio="h,1:1"
             app:layout_constraintEnd_toStartOf="@+id/actorSecond"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/castTitle" />
@@ -177,22 +170,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/actor_first_moc"
-            android:textColor="@color/main_text_color"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/actorFirst"
             app:layout_constraintStart_toStartOf="@+id/actorFirst"
             app:layout_constraintTop_toBottomOf="@id/actorFirst" />
 
         <ImageView
             android:id="@+id/actorSecond"
-            android:layout_width="0dp"
-            android:layout_height="140dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginTop="8dp"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
             android:src="@drawable/actor_second"
-            app:layout_constraintDimensionRatio="h,1:1"
             app:layout_constraintEnd_toStartOf="@+id/actorThird"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/actorFirst"
             app:layout_constraintTop_toBottomOf="@id/castTitle" />
 
@@ -202,22 +193,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/actor_second_moc"
-            android:textColor="@color/main_text_color"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/actorSecond"
             app:layout_constraintStart_toStartOf="@+id/actorSecond"
             app:layout_constraintTop_toBottomOf="@id/actorSecond" />
 
         <ImageView
             android:id="@+id/actorThird"
-            android:layout_width="0dp"
-            android:layout_height="140dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginTop="8dp"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
             android:src="@drawable/actor_third"
-            app:layout_constraintDimensionRatio="h,1:1"
             app:layout_constraintEnd_toStartOf="@+id/actorFourth"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/actorSecond"
             app:layout_constraintTop_toBottomOf="@id/castTitle" />
 
@@ -227,23 +216,21 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/actor_third_moc"
-            android:textColor="@color/main_text_color"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/actorThird"
             app:layout_constraintStart_toStartOf="@+id/actorThird"
             app:layout_constraintTop_toBottomOf="@id/actorThird" />
 
         <ImageView
             android:id="@+id/actorFourth"
-            android:layout_width="0dp"
-            android:layout_height="140dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
             android:src="@drawable/actor_fourth"
-            app:layout_constraintDimensionRatio="h,1:1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/actorThird"
             app:layout_constraintTop_toBottomOf="@id/castTitle" />
 
@@ -254,7 +241,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/actor_fourth_moc"
-            android:textColor="@color/main_text_color"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/actorFourth"
             app:layout_constraintStart_toStartOf="@+id/actorFourth"
             app:layout_constraintTop_toBottomOf="@id/actorFourth" />
