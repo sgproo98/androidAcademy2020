@@ -151,105 +151,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/storyline" />
 
-        <ImageView
-            android:id="@+id/actorFirst"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/actor_first"
-            app:layout_constraintEnd_toStartOf="@+id/actorSecond"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/actorAdapter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            tools:listitem="@layout/view_holder_actor"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/castTitle" />
-
-        <TextView
-            android:id="@+id/actorFirstName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/actor_first_moc"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@+id/actorFirst"
-            app:layout_constraintStart_toStartOf="@+id/actorFirst"
-            app:layout_constraintTop_toBottomOf="@id/actorFirst" />
-
-        <ImageView
-            android:id="@+id/actorSecond"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="8dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/actor_second"
-            app:layout_constraintEnd_toStartOf="@+id/actorThird"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/actorFirst"
-            app:layout_constraintTop_toBottomOf="@id/castTitle" />
-
-        <TextView
-            android:id="@+id/actorSecondName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/actor_second_moc"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@+id/actorSecond"
-            app:layout_constraintStart_toStartOf="@+id/actorSecond"
-            app:layout_constraintTop_toBottomOf="@id/actorSecond" />
-
-        <ImageView
-            android:id="@+id/actorThird"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="8dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/actor_third"
-            app:layout_constraintEnd_toStartOf="@+id/actorFourth"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/actorSecond"
-            app:layout_constraintTop_toBottomOf="@id/castTitle" />
-
-        <TextView
-            android:id="@+id/actorThirdName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/actor_third_moc"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@+id/actorThird"
-            app:layout_constraintStart_toStartOf="@+id/actorThird"
-            app:layout_constraintTop_toBottomOf="@id/actorThird" />
-
-        <ImageView
-            android:id="@+id/actorFourth"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/actor_fourth"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/actorThird"
-            app:layout_constraintTop_toBottomOf="@id/castTitle" />
-
-        <TextView
-            android:id="@+id/actorFourthName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/actor_fourth_moc"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@+id/actorFourth"
-            app:layout_constraintStart_toStartOf="@+id/actorFourth"
-            app:layout_constraintTop_toBottomOf="@id/actorFourth" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
